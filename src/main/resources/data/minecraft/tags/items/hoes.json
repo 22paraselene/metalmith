@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "metalmith:copper_hoe","required": false},
+    {"id": "metalmith:flam_iron_hoe","required": false},
+    {"id": "metalmith:silicon_bronze_hoe","required": false},
+    {"id": "metalmith:vein_gold_hoe","required": false}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "metalmith.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "metalmith.refmap.json",
+  "mixins": [
+    "PiglinAiMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

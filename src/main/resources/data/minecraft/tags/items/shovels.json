@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "metalmith:copper_shovel","required": false},
+    {"id": "metalmith:flam_iron_shovel","required": false},
+    {"id": "metalmith:silicon_bronze_shovel","required": false},
+    {"id": "metalmith:vein_gold_shovel","required": false}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "minecraft:obsidian"
+    },
+    "~": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "pattern": [
+    "X~X",
+    "###",
+    "X~X"
+  ],
+  "result": {
+    "item": "metalmith:flam_iron_raw"
+  }
+}

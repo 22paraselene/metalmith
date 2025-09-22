@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "metalmith:copper_sword","required": false},
+    {"id": "metalmith:flam_iron_sword","required": false},
+    {"id": "metalmith:silicon_bronze_sword","required": false},
+    {"id": "metalmith:vein_gold_sword","required": false}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "recipe",
+  "crafter": "mechanic_crafting",
+  "intermediate": "minecraft:air",
+  "min-building-level": 3,
+  "inputs": [
+    {
+      "count": 5,
+      "item": "minecraft:stick"
+    },
+    {
+      "count": 2,
+      "item": "metalmith:silicon_bronze_ingot"
+    }
+  ],
+  "count": 32,
+  "result": "minecraft:rail"
+}

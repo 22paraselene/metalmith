@@ -1,0 +1,6 @@
+{
+	"parent": "simplyswords:item/template_longsword",
+	"textures": {
+		"layer0": "metalmith:item/simplyswords/silicon_bronze_longsword"
+	}
+}

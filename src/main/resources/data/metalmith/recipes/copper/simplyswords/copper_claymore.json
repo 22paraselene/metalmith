@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:wood_sticks"
+    },
+    "X": {
+      "item": "minecraft:copper_ingot"
+    },
+    "Y": {
+      "item": "metalmith:copper_nugget"
+    }
+  },
+  "pattern": [
+    " YX",
+    "YXY",
+    "#Y "
+  ],
+  "result": {
+    "item": "metalmith:copper_claymore"
+  }
+}

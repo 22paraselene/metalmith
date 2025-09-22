@@ -1,0 +1,21 @@
+{
+  "type": "recipe",
+  "crafter": "blacksmith_crafting",
+  "intermediate": "minecraft:air",
+  "min-building-level": 4,
+  "inputs": [
+    {
+      "count": 3,
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "count": 4,
+      "item": "minecraft:obsidian"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:magma_block"
+    }
+  ],
+  "result": "metalmith:flam_iron_ingot"
+}

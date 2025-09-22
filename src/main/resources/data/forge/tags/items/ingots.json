@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "metalmith:flam_iron_ingot","required": false},
+    {"id": "metalmith:silicon_bronze_ingot","required": false},
+    {"id": "metalmith:vein_gold_ingot","required": false}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "ingredient": [
+    {
+      "item": "metalmith:vein_gold_pickaxe"
+    },
+    {
+      "item": "metalmith:vein_gold_shovel"
+    },
+    {
+      "item": "metalmith:vein_gold_axe"
+    },
+    {
+      "item": "metalmith:vein_gold_hoe"
+    },
+    {
+      "item": "metalmith:vein_gold_sword"
+    },
+    {
+      "item": "metalmith:vein_gold_helmet"
+    },
+    {
+      "item": "metalmith:vein_gold_chestplate"
+    },
+    {
+      "item": "metalmith:vein_gold_leggings"
+    },
+    {
+      "item": "metalmith:vein_gold_boots"
+    }
+  ],
+  "result": "metalmith:vein_gold_nugget"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "metalmith:silicon_bronze_ingot"
+  },
+  "base": {
+    "item": "metalmith:copper_claymore"
+  },
+  "addition": {
+    "item": "metalmith:silicon_bronze_ingot"
+  },
+  "result": {
+    "item": "metalmith:silicon_bronze_claymore"
+  }
+}

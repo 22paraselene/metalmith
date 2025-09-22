@@ -1,0 +1,17 @@
+{
+  "type": "recipe",
+  "crafter": "blacksmith_crafting",
+  "intermediate": "minecraft:air",
+  "min-building-level": 3,
+  "inputs": [
+    {
+      "count": 3,
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "count": 6,
+      "item": "minecraft:diorite"
+    }
+  ],
+  "result": "metalmith:silicon_bronze_ingot"
+}

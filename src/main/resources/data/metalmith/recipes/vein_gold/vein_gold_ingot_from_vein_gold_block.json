@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "metalmith:vein_gold_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "metalmith:vein_gold_ingot"
+  }
+}

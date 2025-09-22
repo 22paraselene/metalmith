@@ -1,0 +1,38 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "bakery"
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bakery"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "metalmith:copper_nugget"
+    },
+    "S": {
+      "item": "structurize:sceptergold"
+    },
+    "X": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "ISI",
+    "XXX"
+  ],
+  "result": {
+    "item": "minecolonies:blockminecoloniesrack"
+  },
+  "show_notification": true
+}

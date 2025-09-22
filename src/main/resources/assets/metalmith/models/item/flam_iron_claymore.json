@@ -1,0 +1,6 @@
+{
+	"parent": "simplyswords:item/template_claymore",
+	"textures": {
+		"layer0": "metalmith:item/simplyswords/flam_iron_claymore"
+	}
+}

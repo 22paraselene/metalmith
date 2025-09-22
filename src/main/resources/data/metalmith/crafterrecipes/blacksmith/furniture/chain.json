@@ -1,0 +1,13 @@
+{
+  "type": "recipe",
+  "crafter": "blacksmith_crafting",
+  "intermediate": "minecraft:air",
+  "inputs": [
+    {
+      "count": 3,
+      "item": "metalmith:silicon_bronze_nugget"
+    }
+  ],
+  "count": 2,
+  "result": "minecraft:chain"
+}

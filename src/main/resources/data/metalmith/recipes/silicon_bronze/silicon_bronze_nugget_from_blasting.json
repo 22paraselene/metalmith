@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "ingredient": [
+    {
+      "item": "metalmith:silicon_bronze_pickaxe"
+    },
+    {
+      "item": "metalmith:silicon_bronze_shovel"
+    },
+    {
+      "item": "metalmith:silicon_bronze_axe"
+    },
+    {
+      "item": "metalmith:silicon_bronze_hoe"
+    },
+    {
+      "item": "metalmith:silicon_bronze_sword"
+    },
+    {
+      "item": "metalmith:silicon_bronze_helmet"
+    },
+    {
+      "item": "metalmith:silicon_bronze_chestplate"
+    },
+    {
+      "item": "metalmith:silicon_bronze_leggings"
+    },
+    {
+      "item": "metalmith:silicon_bronze_boots"
+    }
+  ],
+  "result": "metalmith:silicon_bronze_nugget"
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "simplyswords:item/template_katana",
+	"textures": {
+		"layer0": "metalmith:item/simplyswords/copper_katana"
+	}
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "metalmith:copper_pickaxe"
+    },
+    {
+      "item": "metalmith:copper_shovel"
+    },
+    {
+      "item": "metalmith:copper_axe"
+    },
+    {
+      "item": "metalmith:copper_hoe"
+    },
+    {
+      "item": "metalmith:copper_sword"
+    },
+    {
+      "item": "metalmith:copper_helmet"
+    },
+    {
+      "item": "metalmith:copper_chestplate"
+    },
+    {
+      "item": "metalmith:copper_leggings"
+    },
+    {
+      "item": "metalmith:copper_boots"
+    }
+  ],
+  "result": "metalmith:copper_nugget"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "recipe",
+  "crafter": "blacksmith_crafting",
+  "intermediate": "minecraft:air",
+  "min-building-level": 4,
+  "inputs": [
+    {
+      "item": "minecraft:iron_helmet"
+    },
+    {
+      "count": 2,
+      "item": "metalmith:flam_iron_ingot"
+    }
+  ],
+  "result": "metalmith:flam_iron_helmet"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "recipe",
+  "crafter": "blacksmith_crafting",
+  "intermediate": "minecraft:air",
+  "inputs": [
+    {
+      "count": 3,
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": "metalmith:copper_pickaxe"
+}

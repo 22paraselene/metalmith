@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "metalmith:copper_boots","required": false},
+    {"id": "metalmith:copper_chestplate","required": false},
+    {"id": "metalmith:copper_helmet","required": false},
+    {"id": "metalmith:copper_leggings","required": false},
+
+    {"id": "metalmith:flam_iron_boots","required": false},
+    {"id": "metalmith:flam_iron_chestplate","required": false},
+    {"id": "metalmith:flam_iron_helmet","required": false},
+    {"id": "metalmith:flam_iron_leggings","required": false},
+
+    {"id": "metalmith:silicon_bronze_boots","required": false},
+    {"id": "metalmith:silicon_bronze_bronze_leggings","required": false},
+    {"id": "metalmith:silicon_bronze_chestplate","required": false},
+    {"id": "metalmith:silicon_bronze_helmet","required": false},
+    
+    {"id": "metalmith:vein_gold_boots","required": false},
+    {"id": "metalmith:vein_gold_chestplate","required": false},
+    {"id": "metalmith:vein_gold_helmet","required": false},
+    {"id": "metalmith:vein_gold_leggings","required": false}
+  ]
+}

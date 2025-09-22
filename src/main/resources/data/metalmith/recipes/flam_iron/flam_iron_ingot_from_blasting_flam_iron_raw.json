@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredient": {
+    "item": "metalmith:flam_iron_raw"
+  },
+  "result": "metalmith:flam_iron_ingot"
+}

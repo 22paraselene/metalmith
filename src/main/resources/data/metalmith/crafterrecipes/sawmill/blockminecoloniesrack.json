@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "recipe",
+  "crafter": "sawmill_crafting",
+  "intermediate": "minecraft:air",
+  "inputs": [
+    {
+      "count": 6,
+      "item": "materials_integration:planks_integration"
+    },
+    {
+      "count": 2,
+      "item": "metalmith:copper_nugget"
+    }
+  ],
+  "result": "minecolonies:blockminecoloniesrack"
+}

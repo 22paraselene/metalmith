@@ -1,0 +1,13 @@
+{
+  "type": "recipe",
+  "crafter": "blacksmith_crafting",
+  "intermediate": "minecraft:air",
+  "inputs": [
+    {
+      "count": 7,
+      "item": "metalmith:silicon_bronze_ingot"
+    }
+  ],
+  "count": 2,
+  "result": "minecraft:cauldron"
+}

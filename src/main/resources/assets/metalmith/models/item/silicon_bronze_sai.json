@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "metalmith:item/simplyswords/silicon_bronze_sai"
+  }
+}

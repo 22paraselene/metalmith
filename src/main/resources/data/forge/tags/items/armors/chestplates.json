@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "metalmith:copper_chestplate","required": false},
+    {"id": "metalmith:flam_iron_chestplate","required": false},
+    {"id": "metalmith:silicon_bronze_chestplate","required": false},
+    {"id": "metalmith:vein_gold_chestplate","required": false}
+  ]
+}

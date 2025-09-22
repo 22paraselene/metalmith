@@ -1,0 +1,16 @@
+{
+  "type": "recipe",
+  "crafter": "blacksmith_crafting",
+  "intermediate": "minecraft:air",
+  "min-building-level": 3,
+  "inputs": [
+    {
+      "item": "metalmith:copper_hoe"
+    },
+    {
+      "count": 2,
+      "item": "metalmith:silicon_bronze_ingot"
+    }
+  ],
+  "result": "metalmith:silicon_bronze_hoe"
+}

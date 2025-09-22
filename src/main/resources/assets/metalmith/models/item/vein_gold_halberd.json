@@ -1,0 +1,6 @@
+{
+	"parent": "simplyswords:item/long_handheld",
+	"textures": {
+		"layer0": "metalmith:item/simplyswords/vein_gold_halberd"
+	}
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "ingredient": [
+    {
+      "item": "metalmith:flam_iron_pickaxe"
+    },
+    {
+      "item": "metalmith:flam_iron_shovel"
+    },
+    {
+      "item": "metalmith:flam_iron_axe"
+    },
+    {
+      "item": "metalmith:flam_iron_hoe"
+    },
+    {
+      "item": "metalmith:flam_iron_sword"
+    },
+    {
+      "item": "metalmith:flam_iron_helmet"
+    },
+    {
+      "item": "metalmith:flam_iron_chestplate"
+    },
+    {
+      "item": "metalmith:flam_iron_leggings"
+    },
+    {
+      "item": "metalmith:flam_iron_boots"
+    }
+  ],
+  "result": "metalmith:flam_iron_nugget"
+}

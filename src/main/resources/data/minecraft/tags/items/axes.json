@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "metalmith:copper_axe","required": false},
+    {"id": "metalmith:flam_iron_axe","required": false},
+    {"id": "metalmith:silicon_bronze_axe","required": false},
+    {"id": "metalmith:vein_gold_axe","required": false}
+  ]
+}

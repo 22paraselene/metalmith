@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "X": {
+      "item": "minecraft:diorite"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "###",
+    "XXX"
+  ],
+  "result": {
+    "item": "metalmith:silicon_bronze_raw"
+  }
+}

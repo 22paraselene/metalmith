@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "metalmith:flam_iron_ingot"
+  },
+  "base": {
+    "item": "minecraft:iron_leggings"
+  },
+  "addition": {
+    "item": "metalmith:flam_iron_ingot"
+  },
+  "result": {
+    "item": "metalmith:flam_iron_leggings"
+  }
+}

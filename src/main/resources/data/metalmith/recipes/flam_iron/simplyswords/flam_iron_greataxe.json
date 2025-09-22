@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "metalmith:flam_iron_ingot"
+  },
+  "base": {
+    "item": "simplyswords:iron_greataxe"
+  },
+  "addition": {
+    "item": "metalmith:flam_iron_ingot"
+  },
+  "result": {
+    "item": "metalmith:flam_iron_greataxe"
+  }
+}

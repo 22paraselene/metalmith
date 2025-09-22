@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "metalmith:copper_boots","required": false},
+    {"id": "metalmith:flam_iron_boots","required": false},
+    {"id": "metalmith:silicon_bronze_boots","required": false},
+    {"id": "metalmith:vein_gold_boots","required": false}
+  ]
+}

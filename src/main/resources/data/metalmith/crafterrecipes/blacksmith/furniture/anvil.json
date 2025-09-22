@@ -1,0 +1,17 @@
+{
+  "type": "recipe",
+  "crafter": "blacksmith_crafting",
+  "intermediate": "minecraft:air",
+  "inputs": [
+    {
+      "count": 3,
+      "item": "metalmith:silicon_bronze_block"
+    },
+    {
+      "count": 4,
+      "item": "metalmith:silicon_bronze_ingot"
+    }
+  ],
+  "count": 2,
+  "result": "minecraft:anvil"
+}

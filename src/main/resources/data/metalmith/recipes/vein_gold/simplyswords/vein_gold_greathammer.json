@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "metalmith:vein_gold_ingot"
+  },
+  "base": {
+    "item": "simplyswords:gold_greathammer"
+  },
+  "addition": {
+    "item": "metalmith:vein_gold_ingot"
+  },
+  "result": {
+    "item": "metalmith:vein_gold_greathammer"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "X": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "###",
+    "XXX"
+  ],
+  "result": {
+    "item": "metalmith:vein_gold_raw"
+  }
+}
