@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    {"id": "metalmith:flam_iron_block","required": false},
-    {"id": "metalmith:silicon_bronze_block","required": false},
-    {"id": "metalmith:vein_gold_block","required": false}
-  ]
-}

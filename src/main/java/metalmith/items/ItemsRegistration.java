@@ -5,6 +5,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -50,15 +51,27 @@ public class ItemsRegistration {
 
     // 注册方块
     public static final RegistryObject<Block> SILICON_BRONZE_BLOCK =
-            BLOCKS.register("silicon_bronze_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
+            BLOCKS.register("silicon_bronze_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.METAL)
+                    .strength(5.0f, 5.0f)
+                    .sound(SoundType.METAL)
+            ));
     public static final RegistryObject<Item> SILICON_BRONZE_BLOCK_ITEM =
             ITEMS.register("silicon_bronze_block", () -> new BlockItem(SILICON_BRONZE_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Block> VEIN_GOLD_BLOCK =
-            BLOCKS.register("vein_gold_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
+            BLOCKS.register("vein_gold_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.METAL)
+                    .strength(5.0f, 5.0f)
+                    .sound(SoundType.METAL)
+            ));
     public static final RegistryObject<Item> VEIN_GOLD_BLOCK_ITEM =
             ITEMS.register("vein_gold_block", () -> new BlockItem(VEIN_GOLD_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Block> FLAM_IRON_BLOCK =
-            BLOCKS.register("flam_iron_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
+            BLOCKS.register("flam_iron_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.METAL)
+                    .strength(5.0f, 5.0f)
+                    .sound(SoundType.METAL)
+            ));
     public static final RegistryObject<Item> FLAM_IRON_BLOCK_ITEM =
             ITEMS.register("flam_iron_block", () -> new BlockItem(FLAM_IRON_BLOCK.get(), new Item.Properties()));
 
@@ -133,7 +146,6 @@ public class ItemsRegistration {
                         output.accept(FLAM_IRON_NUGGET.get());
                         output.accept(FLAM_IRON_BLOCK_ITEM.get());
 
-// 在displayItems方法中添加：
 // 铜武器
                         output.accept(SimplySwordsRegistration.COPPER_LONGSWORD.get());
                         output.accept(SimplySwordsRegistration.COPPER_TWINBLADE.get());

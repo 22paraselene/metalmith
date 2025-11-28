@@ -92,7 +92,7 @@ public class SimplySwordsRegistration {
         return baseSpeed + materialModifier;
     }
     
-    // 辅助方法：计算伤害
+    // 计算伤害
     private static int getDamage(String material, float weaponModifier) {
         float baseDamage = 0.0f;
         

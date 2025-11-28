@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "metalmith:flam_iron_block",
+    "metalmith:silicon_bronze_block",
+    "metalmith:vein_gold_block"
+  ]
+}

@@ -26,6 +26,6 @@ public class Metalmith {
         ItemsRegistration.BLOCKS.register(modEventBus);
         
         // 注册Simply Swords联动武器
-        SimplySwordsRegistration.ITEMS.register(modEventBus); // 新增注册
+        SimplySwordsRegistration.ITEMS.register(modEventBus);
     }
 }
