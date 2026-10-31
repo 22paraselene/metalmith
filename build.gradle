@@ -150,11 +150,20 @@ dependencies {
     if (modsDir == null) {
         throw new GradleException('Set -PmodsDir=<path to mods folder> or MODS_DIR')
     }
-    implementation fg.deobf(files("$modsDir/[简易刀剑] simplyswords-forge-neoforge-1.70.2-1.20.1.jar"))
-    implementation fg.deobf(files("$modsDir/architectury-9.2.14-forge.jar"))
-    implementation fg.deobf(files("$modsDir/cloth-config-11.1.136-forge.jar"))
-    implementation fg.deobf(files("$modsDir/fzzy_config-0.7.7+1.20.1+forge.jar"))
-    implementation fg.deobf(files("$modsDir/SimplyTooltips-forge-0.1.5-1.20.1.jar"))
+    def findModJar = { String fileName ->
+        def matches = new File(modsDir).listFiles()?.findAll {
+            it.isFile() && it.name.endsWith(fileName)
+        }
+        if (!matches) {
+            throw new GradleException("Missing $fileName in $modsDir")
+        }
+        return matches.first()
+    }
+    implementation fg.deobf(files(findModJar('simplyswords-forge-neoforge-1.70.2-1.20.1.jar')))
+    implementation fg.deobf(files(findModJar('architectury-9.2.14-forge.jar')))
+    implementation fg.deobf(files(findModJar('cloth-config-11.1.136-forge.jar')))
+    implementation fg.deobf(files(findModJar('fzzy_config-0.7.7+1.20.1+forge.jar')))
+    implementation fg.deobf(files(findModJar('SimplyTooltips-forge-0.1.5-1.20.1.jar')))
     // Specify the version of Minecraft to use.
     // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
     // The "userdev" classifier will be requested and setup by ForgeGradle.
