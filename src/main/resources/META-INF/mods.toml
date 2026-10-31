@@ -65,7 +65,7 @@ side = "BOTH"
 [[dependencies."${mod_id}"]]
 modId="simplyswords"
 mandatory=true
-versionRange="[1.0,)"
+versionRange="[1.70.2,)"
 ordering="AFTER"
 side="BOTH"
 
