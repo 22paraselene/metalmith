@@ -146,12 +146,15 @@ repositories {
 }
 
 dependencies {
-    def mods = 'C:/Users/26627/Desktop/game/Minecraft1.12.2/.minecraft/versions/1.20.1自组装/mods'
-    implementation fg.deobf(files("$mods/[简易刀剑] simplyswords-forge-neoforge-1.70.2-1.20.1.jar"))
-    implementation fg.deobf(files("$mods/architectury-9.2.14-forge.jar"))
-    implementation fg.deobf(files("$mods/cloth-config-11.1.136-forge.jar"))
-    implementation fg.deobf(files("$mods/fzzy_config-0.7.7+1.20.1+forge.jar"))
-    implementation fg.deobf(files("$mods/SimplyTooltips-forge-0.1.5-1.20.1.jar"))
+    def modsDir = findProperty('modsDir') ?: System.getenv('MODS_DIR')
+    if (modsDir == null) {
+        throw new GradleException('Set -PmodsDir=<path to mods folder> or MODS_DIR')
+    }
+    implementation fg.deobf(files("$modsDir/[简易刀剑] simplyswords-forge-neoforge-1.70.2-1.20.1.jar"))
+    implementation fg.deobf(files("$modsDir/architectury-9.2.14-forge.jar"))
+    implementation fg.deobf(files("$modsDir/cloth-config-11.1.136-forge.jar"))
+    implementation fg.deobf(files("$modsDir/fzzy_config-0.7.7+1.20.1+forge.jar"))
+    implementation fg.deobf(files("$modsDir/SimplyTooltips-forge-0.1.5-1.20.1.jar"))
     // Specify the version of Minecraft to use.
     // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
     // The "userdev" classifier will be requested and setup by ForgeGradle.
