@@ -5,6 +5,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sweenus.simplyswords.item.SimplySwordsSwordItem;
+import net.sweenus.simplyswords.item.LegacyWeaponAttributes;
 import metalmith.Metalmith;
 
 public class SimplySwordsRegistration {
@@ -106,367 +107,314 @@ public class SimplySwordsRegistration {
         return (int) (baseDamage + weaponModifier);
     }
 
+
+    private static Item.Properties properties(String material, float weaponModifier, String weaponType) {
+        return LegacyWeaponAttributes.configure(
+                new Item.Properties().stacksTo(1),
+                getDamage(material, weaponModifier),
+                getAttackSpeed(weaponType, material));
+    }
     // 注册铜武器
     public static final RegistryObject<Item> COPPER_LONGSWORD = ITEMS.register("copper_longsword",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", LONGSWORD_MODIFIER), 
-                    getAttackSpeed("longsword", "copper"), 
+                    properties("copper", LONGSWORD_MODIFIER, "longsword"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_TWINBLADE = ITEMS.register("copper_twinblade",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", TWINBLADE_MODIFIER), 
-                    getAttackSpeed("twinblade", "copper"), 
+                    properties("copper", TWINBLADE_MODIFIER, "twinblade"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_RAPIER = ITEMS.register("copper_rapier",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", RAPIER_MODIFIER), 
-                    getAttackSpeed("rapier", "copper"), 
+                    properties("copper", RAPIER_MODIFIER, "rapier"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_KATANA = ITEMS.register("copper_katana",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", KATANA_MODIFIER), 
-                    getAttackSpeed("katana", "copper"), 
+                    properties("copper", KATANA_MODIFIER, "katana"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_SAI = ITEMS.register("copper_sai",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", SAI_MODIFIER), 
-                    getAttackSpeed("sai", "copper"), 
+                    properties("copper", SAI_MODIFIER, "sai"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_SPEAR = ITEMS.register("copper_spear",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", SPEAR_MODIFIER), 
-                    getAttackSpeed("spear", "copper"), 
+                    properties("copper", SPEAR_MODIFIER, "spear"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_GLAIVE = ITEMS.register("copper_glaive",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", GLAIVE_MODIFIER), 
-                    getAttackSpeed("glaive", "copper"), 
+                    properties("copper", GLAIVE_MODIFIER, "glaive"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_WARGLAIVE = ITEMS.register("copper_warglaive",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", WARGLAIVE_MODIFIER), 
-                    getAttackSpeed("warglaive", "copper"), 
+                    properties("copper", WARGLAIVE_MODIFIER, "warglaive"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_CUTLASS = ITEMS.register("copper_cutlass",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", CUTLASS_MODIFIER), 
-                    getAttackSpeed("cutlass", "copper"), 
+                    properties("copper", CUTLASS_MODIFIER, "cutlass"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_CLAYMORE = ITEMS.register("copper_claymore",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", CLAYMORE_MODIFIER), 
-                    getAttackSpeed("claymore", "copper"), 
+                    properties("copper", CLAYMORE_MODIFIER, "claymore"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_GREATAXE = ITEMS.register("copper_greataxe",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", GREATAXE_MODIFIER), 
-                    getAttackSpeed("greataxe", "copper"), 
+                    properties("copper", GREATAXE_MODIFIER, "greataxe"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_GREATHAMMER = ITEMS.register("copper_greathammer",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", GREATHAMMER_MODIFIER), 
-                    getAttackSpeed("greathammer", "copper"), 
+                    properties("copper", GREATHAMMER_MODIFIER, "greathammer"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_CHAKRAM = ITEMS.register("copper_chakram",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", CHAKRAM_MODIFIER), 
-                    getAttackSpeed("chakram", "copper"), 
+                    properties("copper", CHAKRAM_MODIFIER, "chakram"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_SCYTHE = ITEMS.register("copper_scythe",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", SCYTHE_MODIFIER), 
-                    getAttackSpeed("scythe", "copper"), 
+                    properties("copper", SCYTHE_MODIFIER, "scythe"),
                     "metalmith:copper_ingot"));
 
     public static final RegistryObject<Item> COPPER_HALBERD = ITEMS.register("copper_halberd",
             () -> new SimplySwordsSwordItem(ToolsRegistration.COPPER_TIER,
-                    getDamage("copper", HALBERD_MODIFIER), 
-                    getAttackSpeed("halberd", "copper"), 
+                    properties("copper", HALBERD_MODIFIER, "halberd"),
                     "metalmith:copper_ingot"));
 
     // 硅青铜武器
     public static final RegistryObject<Item> SILICON_BRONZE_LONGSWORD = ITEMS.register("silicon_bronze_longsword",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", LONGSWORD_MODIFIER), 
-                    getAttackSpeed("longsword", "silicon_bronze"), 
+                    properties("silicon_bronze", LONGSWORD_MODIFIER, "longsword"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_TWINBLADE = ITEMS.register("silicon_bronze_twinblade",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", TWINBLADE_MODIFIER), 
-                    getAttackSpeed("twinblade", "silicon_bronze"), 
+                    properties("silicon_bronze", TWINBLADE_MODIFIER, "twinblade"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_RAPIER = ITEMS.register("silicon_bronze_rapier",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", RAPIER_MODIFIER), 
-                    getAttackSpeed("rapier", "silicon_bronze"), 
+                    properties("silicon_bronze", RAPIER_MODIFIER, "rapier"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_KATANA = ITEMS.register("silicon_bronze_katana",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", KATANA_MODIFIER), 
-                    getAttackSpeed("katana", "silicon_bronze"), 
+                    properties("silicon_bronze", KATANA_MODIFIER, "katana"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_SAI = ITEMS.register("silicon_bronze_sai",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", SAI_MODIFIER), 
-                    getAttackSpeed("sai", "silicon_bronze"), 
+                    properties("silicon_bronze", SAI_MODIFIER, "sai"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_SPEAR = ITEMS.register("silicon_bronze_spear",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", SPEAR_MODIFIER), 
-                    getAttackSpeed("spear", "silicon_bronze"), 
+                    properties("silicon_bronze", SPEAR_MODIFIER, "spear"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_GLAIVE = ITEMS.register("silicon_bronze_glaive",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", GLAIVE_MODIFIER), 
-                    getAttackSpeed("glaive", "silicon_brone"), 
+                    properties("silicon_bronze", GLAIVE_MODIFIER, "glaive"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_WARGLAIVE = ITEMS.register("silicon_bronze_warglaive",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", WARGLAIVE_MODIFIER), 
-                    getAttackSpeed("warglaive", "silicon_bronze"), 
+                    properties("silicon_bronze", WARGLAIVE_MODIFIER, "warglaive"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_CUTLASS = ITEMS.register("silicon_bronze_cutlass",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", CUTLASS_MODIFIER), 
-                    getAttackSpeed("cutlass", "silicon_bronze"), 
+                    properties("silicon_bronze", CUTLASS_MODIFIER, "cutlass"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_CLAYMORE = ITEMS.register("silicon_bronze_claymore",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", CLAYMORE_MODIFIER), 
-                    getAttackSpeed("claymore", "silicon_bronze"), 
+                    properties("silicon_bronze", CLAYMORE_MODIFIER, "claymore"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_GREATAXE = ITEMS.register("silicon_bronze_greataxe",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", GREATAXE_MODIFIER), 
-                    getAttackSpeed("greataxe", "silicon_bronze"), 
+                    properties("silicon_bronze", GREATAXE_MODIFIER, "greataxe"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_GREATHAMMER = ITEMS.register("silicon_bronze_greathammer",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", GREATHAMMER_MODIFIER), 
-                    getAttackSpeed("greathammer", "silicon_bronze"), 
+                    properties("silicon_bronze", GREATHAMMER_MODIFIER, "greathammer"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_CHAKRAM = ITEMS.register("silicon_bronze_chakram",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", CHAKRAM_MODIFIER), 
-                    getAttackSpeed("chakram", "silicon_bronze"), 
+                    properties("silicon_bronze", CHAKRAM_MODIFIER, "chakram"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_SCYTHE = ITEMS.register("silicon_bronze_scythe",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", SCYTHE_MODIFIER), 
-                    getAttackSpeed("scythe", "silicon_bronze"), 
+                    properties("silicon_bronze", SCYTHE_MODIFIER, "scythe"),
                     "metalmith:silicon_bronze_ingot"));
 
     public static final RegistryObject<Item> SILICON_BRONZE_HALBERD = ITEMS.register("silicon_bronze_halberd",
             () -> new SimplySwordsSwordItem(ToolsRegistration.SILICON_BRONZE_TIER,
-                    getDamage("silicon_bronze", HALBERD_MODIFIER), 
-                    getAttackSpeed("halberd", "silicon_bronze"), 
+                    properties("silicon_bronze", HALBERD_MODIFIER, "halberd"),
                     "metalmith:silicon_bronze_ingot"));
 
     // 石脉金武器
     public static final RegistryObject<Item> VEIN_GOLD_LONGSWORD = ITEMS.register("vein_gold_longsword",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", LONGSWORD_MODIFIER), 
-                    getAttackSpeed("longsword", "vein_gold"), 
+                    properties("vein_gold", LONGSWORD_MODIFIER, "longsword"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_TWINBLADE = ITEMS.register("vein_gold_twinblade",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", TWINBLADE_MODIFIER), 
-                    getAttackSpeed("twinblade", "vein_gold"), 
+                    properties("vein_gold", TWINBLADE_MODIFIER, "twinblade"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_RAPIER = ITEMS.register("vein_gold_rapier",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", RAPIER_MODIFIER), 
-                    getAttackSpeed("rapier", "vein_gold"), 
+                    properties("vein_gold", RAPIER_MODIFIER, "rapier"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_KATANA = ITEMS.register("vein_gold_katana",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", KATANA_MODIFIER), 
-                    getAttackSpeed("katana", "vein_gold"), 
+                    properties("vein_gold", KATANA_MODIFIER, "katana"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_SAI = ITEMS.register("vein_gold_sai",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", SAI_MODIFIER), 
-                    getAttackSpeed("sai", "vein_gold"), 
+                    properties("vein_gold", SAI_MODIFIER, "sai"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_SPEAR = ITEMS.register("vein_gold_spear",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", SPEAR_MODIFIER), 
-                    getAttackSpeed("spear", "vein_gold"), 
+                    properties("vein_gold", SPEAR_MODIFIER, "spear"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_GLAIVE = ITEMS.register("vein_gold_glaive",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", GLAIVE_MODIFIER), 
-                    getAttackSpeed("glaive", "vein_gold"), 
+                    properties("vein_gold", GLAIVE_MODIFIER, "glaive"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_WARGLAIVE = ITEMS.register("vein_gold_warglaive",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", WARGLAIVE_MODIFIER), 
-                    getAttackSpeed("warglaive", "vein_gold"), 
+                    properties("vein_gold", WARGLAIVE_MODIFIER, "warglaive"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_CUTLASS = ITEMS.register("vein_gold_cutlass",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", CUTLASS_MODIFIER), 
-                    getAttackSpeed("cutlass", "vein_gold"), 
+                    properties("vein_gold", CUTLASS_MODIFIER, "cutlass"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_CLAYMORE = ITEMS.register("vein_gold_claymore",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", CLAYMORE_MODIFIER), 
-                    getAttackSpeed("claymore", "vein_gold"), 
+                    properties("vein_gold", CLAYMORE_MODIFIER, "claymore"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_GREATAXE = ITEMS.register("vein_gold_greataxe",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", GREATAXE_MODIFIER), 
-                    getAttackSpeed("greataxe", "vein_gold"), 
+                    properties("vein_gold", GREATAXE_MODIFIER, "greataxe"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_GREATHAMMER = ITEMS.register("vein_gold_greathammer",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", GREATHAMMER_MODIFIER), 
-                    getAttackSpeed("greathammer", "vein_gold"), 
+                    properties("vein_gold", GREATHAMMER_MODIFIER, "greathammer"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_CHAKRAM = ITEMS.register("vein_gold_chakram",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", CHAKRAM_MODIFIER), 
-                    getAttackSpeed("chakram", "vein_gold"), 
+                    properties("vein_gold", CHAKRAM_MODIFIER, "chakram"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_SCYTHE = ITEMS.register("vein_gold_scythe",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", SCYTHE_MODIFIER), 
-                    getAttackSpeed("scythe", "vein_gold"), 
+                    properties("vein_gold", SCYTHE_MODIFIER, "scythe"),
                     "metalmith:vein_gold_ingot"));
 
     public static final RegistryObject<Item> VEIN_GOLD_HALBERD = ITEMS.register("vein_gold_halberd",
             () -> new SimplySwordsSwordItem(ToolsRegistration.VEIN_GOLD_TIER,
-                    getDamage("vein_gold", HALBERD_MODIFIER), 
-                    getAttackSpeed("halberd", "vein_gold"), 
+                    properties("vein_gold", HALBERD_MODIFIER, "halberd"),
                     "metalmith:vein_gold_ingot"));
 
     // 炽玄铁武器
     public static final RegistryObject<Item> FLAM_IRON_LONGSWORD = ITEMS.register("flam_iron_longsword",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", LONGSWORD_MODIFIER), 
-                    getAttackSpeed("longsword", "flam_iron"), 
+                    properties("flam_iron", LONGSWORD_MODIFIER, "longsword"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_TWINBLADE = ITEMS.register("flam_iron_twinblade",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", TWINBLADE_MODIFIER), 
-                    getAttackSpeed("twinblade", "flam_iron"), 
+                    properties("flam_iron", TWINBLADE_MODIFIER, "twinblade"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_RAPIER = ITEMS.register("flam_iron_rapier",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", RAPIER_MODIFIER), 
-                    getAttackSpeed("rapier", "flam_iron"), 
+                    properties("flam_iron", RAPIER_MODIFIER, "rapier"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_KATANA = ITEMS.register("flam_iron_katana",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", KATANA_MODIFIER), 
-                    getAttackSpeed("katana", "flam_iron"), 
+                    properties("flam_iron", KATANA_MODIFIER, "katana"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_SAI = ITEMS.register("flam_iron_sai",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", SAI_MODIFIER), 
-                    getAttackSpeed("sai", "flam_iron"), 
+                    properties("flam_iron", SAI_MODIFIER, "sai"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_SPEAR = ITEMS.register("flam_iron_spear",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", SPEAR_MODIFIER), 
-                    getAttackSpeed("spear", "flam_iron"), 
+                    properties("flam_iron", SPEAR_MODIFIER, "spear"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_GLAIVE = ITEMS.register("flam_iron_glaive",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", GLAIVE_MODIFIER), 
-                    getAttackSpeed("glaive", "flam_iron"), 
+                    properties("flam_iron", GLAIVE_MODIFIER, "glaive"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_WARGLAIVE = ITEMS.register("flam_iron_warglaive",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", WARGLAIVE_MODIFIER), 
-                    getAttackSpeed("warglaive", "flam_iron"), 
+                    properties("flam_iron", WARGLAIVE_MODIFIER, "warglaive"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_CUTLASS = ITEMS.register("flam_iron_cutlass",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", CUTLASS_MODIFIER), 
-                    getAttackSpeed("cutlass", "flam_iron"), 
+                    properties("flam_iron", CUTLASS_MODIFIER, "cutlass"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_CLAYMORE = ITEMS.register("flam_iron_claymore",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", CLAYMORE_MODIFIER), 
-                    getAttackSpeed("claymore", "flam_iron"), 
+                    properties("flam_iron", CLAYMORE_MODIFIER, "claymore"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_GREATAXE = ITEMS.register("flam_iron_greataxe",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", GREATAXE_MODIFIER), 
-                    getAttackSpeed("greataxe", "flam_iron"), 
+                    properties("flam_iron", GREATAXE_MODIFIER, "greataxe"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_GREATHAMMER = ITEMS.register("flam_iron_greathammer",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", GREATHAMMER_MODIFIER), 
-                    getAttackSpeed("greathammer", "flam_iron"), 
+                    properties("flam_iron", GREATHAMMER_MODIFIER, "greathammer"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_CHAKRAM = ITEMS.register("flam_iron_chakram",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", CHAKRAM_MODIFIER), 
-                    getAttackSpeed("chakram", "flam_iron"), 
+                    properties("flam_iron", CHAKRAM_MODIFIER, "chakram"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_SCYTHE = ITEMS.register("flam_iron_scythe",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", SCYTHE_MODIFIER), 
-                    getAttackSpeed("scythe", "flam_iron"), 
+                    properties("flam_iron", SCYTHE_MODIFIER, "scythe"),
                     "metalmith:flam_iron_ingot"));
 
     public static final RegistryObject<Item> FLAM_IRON_HALBERD = ITEMS.register("flam_iron_halberd",
             () -> new SimplySwordsSwordItem(ToolsRegistration.FLAM_IRON_TIER,
-                    getDamage("flam_iron", HALBERD_MODIFIER), 
-                    getAttackSpeed("halberd", "flam_iron"), 
+                    properties("flam_iron", HALBERD_MODIFIER, "halberd"),
                     "metalmith:flam_iron_ingot"));
 }
